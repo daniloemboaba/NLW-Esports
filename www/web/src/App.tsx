@@ -1,5 +1,13 @@
+function Button(){
+  return(
+    <button>
+      Enviar
+    </button>
+  )
+}
+
 function App() {
-  return <h1>Hello NLW</h1>
+  return <Button/>
 }
 
 export default App
