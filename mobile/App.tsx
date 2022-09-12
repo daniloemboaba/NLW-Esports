@@ -4,13 +4,13 @@ import { StyleSheet, Text, View, TouchableOpacity, ProgressBarAndroidComponent, 
 export default function App() {
   return (
     <View style={styles.container}> 
-      <Text>
+      <Text style={styles.title}>
         Hello React native
       </Text>
 
 <Button title='Send 1'/>
 
-      <StatusBar style="auto" />
+      <StatusBar style="auto"/>
     </View>
   );
 }
@@ -22,7 +22,7 @@ interface ButtonProps {
 function Button(props: ButtonProps) {
   return (
     <TouchableOpacity>
-      <Text>
+      <Text style={styles.title}>
         {props.title}
       </Text>
     </TouchableOpacity>
@@ -32,8 +32,12 @@ function Button(props: ButtonProps) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000000',
     alignItems: 'center',
     justifyContent: 'center',
   },
+title: {
+    color: '#F5F5F5',
+    fontSize: 18
+}
 });
