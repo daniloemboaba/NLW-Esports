@@ -1,13 +1,22 @@
-function Button(){
+<interface  ButtonProps {
+  title: string;
+}
+function Button(props: ButtonProps) {
   return(
     <button>
-      Enviar
+      Send
     </button>
   )
 }
 
 function App() {
-  return <Button/>
+  return (
+    <div>
+      <Button title="Send 1"/>
+      <Button />
+/>
+    </div>
+  )
 }
 
 export default App
