@@ -10,7 +10,7 @@ export default function App() {
 
 <Button title='Send 1'/>
 
-      <StatusBar style="auto" backgroundColor='red' />
+      <StatusBar style="auto" />
     </View>
   );
 }
