@@ -9,7 +9,7 @@ module.exports = {
 
       backgroundImage:{
         galaxy: "URL('/background-galaxy.png')",
-        'nlw-gradient': 'linear-gradient(89.86deg, #9572FC 23.08%, #43E7AD 33.94%, #E1D55D 44.57%);'
+        'nlw-gradient': 'linear-gradient(89.86deg, #9572FC 15.08%, #43E7AD 35.94%, #E1D55D 80.57%);'
       },
     },
   },
