@@ -8,6 +8,7 @@ import {
 } from '@expo-google-fonts/inter'
 
 import { Home } from './src/Screens/Home';
+import { Loading } from './src/Componentes/Loading';
 import { Background } from './src/Componentes/Background';
 
 export default function App() {
@@ -20,14 +21,13 @@ export default function App() {
   
   
   return (
-   
     <Background>
       <StatusBar
       barStyle="light-content"
       backgroundColor="transparent"
       translucent
       />
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <Home  /> : <Loading />}
     </Background>
   );
 }
