@@ -1,8 +1,12 @@
 import React from 'react';
-import { View, Image } from 'react-native';
+import { View, Image, FlatList } from 'react-native';
+
+import { GameCard } from '../../Componentes/GameCard';
 
 import logoImg from '../../assets/logo-nlw-esports.png';
+import { Heading } from '../../Componentes/Heading';
 
+import { GAMES } from '../../utils/games';
 import { styles } from './styles';
 
 export function Home() {
@@ -11,6 +15,24 @@ export function Home() {
     <Image source={logoImg}
     style={styles.logo}/>
 
+    <Heading
+    title="Encontre seu duo!"
+    subtitle="Selecione o game que deseja jogar..."
+    />
+
+    <FlatList 
+     data={GAMES}
+     keyExtractor={item => item.id}
+     renderItem={({item}) => (
+
+      <GameCard 
+       data={item}
+      />
+     )} 
+      showsHorizontalScrollIndicator={false}
+      horizontal
+      contentContainerStyle={styles.contentList}
+     />
   </View>
   )
-};
+}; 
